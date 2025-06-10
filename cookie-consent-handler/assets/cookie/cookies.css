@@ -1,0 +1,177 @@
+/*
+ * Manifiesto de Estilos del Manejador de Cookies
+ * Realizado por César Bla, 2025
+ *
+ * Este código es de uso y modificación libres, bajo la licencia MIT.
+ * Agradezco que se mantenga este aviso o se mencione al creador en cualquier redistribución
+ * o derivación del código.
+ *
+ * Más sobre este proyecto y otros en: [Tu enlace de GitHub aquí]
+ * Por ejemplo: https://github.com/CeBla/cookie-consent-handler
+ *
+ * ---
+ */
+
+
+/* ------------------------------------------------------------------
+ * Panel de aviso de cookies
+ * ------------------------------------------------------------------ */
+
+.smile-cookies-panel {
+	position: fixed;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	z-index: 9999;
+	margin: auto;
+	border-radius: 8px;
+	box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
+	font-family: system-ui, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.smile-cookies-box {
+	background-color: #fff;
+	color: #000;
+	padding: 25px;
+	border-radius: 5px;
+	max-height: 90vh;
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+
+.smile-cookies-box::-webkit-scrollbar {
+	width: 6px;
+}
+.smile-cookies-box::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.smile-cookies-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.smile-cookies-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.smile-cookies-close {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.smile-cookies-message {
+	font-size: 0.95rem;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.smile-cookies-buttons {
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.smile-cookies-buttons button {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 0.95rem;
+	transition: background-color 0.2s ease;
+}
+
+.smile-cookies-accept {
+	background-color: #4caf50;
+	color: #fff;
+}
+
+.smile-cookies-deny {
+	background-color: #f44336;
+	color: #fff;
+}
+
+.smile-cookies-preferences:hover {
+	background-color: #e0e0e0;
+}
+
+.smile-cookies-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	font-size: 0.75rem;
+	justify-content: center;
+	text-decoration: underline;
+}
+
+#sbwscf-cookie-categories {
+	margin-bottom: 1.5rem;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.sbwscf-cookie-category {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.sbwscf-cookie-summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 0.75rem 1rem;
+	font-weight: 600;
+	background-color: #f0f0f0;
+	color: #333;
+}
+
+.sbwscf-cookie-title {
+	font-size: 1rem;
+}
+
+.sbwscf-cookie-checkbox {
+	display: flex;
+	align-items: center;
+	font-size: 1.2em;
+	gap: 0.5rem;
+}
+
+.sbwscf-cookie-description {
+	padding: 1rem;
+	background-color: #f8f8f8;
+	font-size: 0.85rem;
+	color: #000;
+}
+/* Pestaña minimizada */
+#sbwscf-manage-consent-container {
+	position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+}
+#sbwscf-manage-consent-btn {
+	position: relative;
+    left: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    top: 25px;
+}
+#sbwscf-manage-consent-btn:hover {
+	top: 0px;
+	transition: all 0.2s ease-in-out;
+}
